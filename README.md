@@ -6,12 +6,22 @@
 
   - 컴파일러 : 기계어로 바꾸어 주는 프로그램
 
-  - 바이트 코드 : 특정 HW가 아닌 가상머신에서 돌아가는 실행 프로그램을 위한 이진 표현법
+  - 바이트 코드/바이너리 파일 (.class) : 특정 HW가 아닌 가상머신에서 돌아가는 실행 프로그램을 위한 이진 표현법
   
-  - JVM (Jva Virtual Machine)
+  - JVM (Java Virtual Machine)
   
-    - ㅇㅁㄴㅇㄴ
+    - 자바 소스코드로부터 만들어진 자바 바이너리 파일(.class)을 실행
+    
+    - 플랫폼 의존적
+    
+    - 바이너리 코드 읽기/검증/실행
+    
+    - Runtime Environment의 규격 제공 (라이브러리 및 기타 파일)
   
   - JRE (Java Runtime Environment)
   
+    - JVM이 자바 프로그램을 동작시킬 때 필요한 라이브러리 및 파일, 기타 파일을 
+    
+  - JDK (Java Develpoment Kit)
   
+    - JRE + 개발에 필요한 도구(javac, java) 등을 포함
