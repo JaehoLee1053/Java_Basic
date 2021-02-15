@@ -57,8 +57,6 @@
 
 - 변하지 않는 수
 
-<pre>
-<code>
+'''
 final int a = 0;
-</code>
-</pre>
+'''
