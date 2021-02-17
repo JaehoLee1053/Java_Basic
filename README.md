@@ -152,3 +152,27 @@ do {
   Execution statement;
 } while(i > 0);
 ```
+
+## OOP
+
+객체 (Object)
+
+- 구체적, 추상적 데이터 단위
+
+OOP (Object Oriented Programming)
+
+- 객체 지향 프로그래밍
+
+- 객체 정의, 기능 구현, cooperation 구현
+
+- ch. 절차 지향 프로그래밍 (Procedural Programming) 
+  - 객체 (Entity)
+ 
+  - 시간, 사건의 흐름에 따라 구현
+  - ex. C언어
+
+Class
+
+- 객체를 코드로 구현한 것
+- OOP의 기본 요소
+- 객체의 blueprint
