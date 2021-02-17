@@ -153,6 +153,8 @@ do {
 } while(i > 0);
 ```
 
+# OOP
+
 ## OOP
 
 객체 (Object)
@@ -166,13 +168,32 @@ OOP (Object Oriented Programming)
 - 객체 정의, 기능 구현, cooperation 구현
 
 - ch. 절차 지향 프로그래밍 (Procedural Programming) 
+
   - 객체 (Entity)
  
   - 시간, 사건의 흐름에 따라 구현
+  - 
   - ex. C언어
 
 Class
 
 - 객체를 코드로 구현한 것
+
 - OOP의 기본 요소
+
 - 객체의 blueprint
+
+멤버 변수
+
+- 객체가 가지는 속성을 변수로 표현
+
+- 클래스의 멤버변수
+
+- member variable, property, attribute
+
+메서드
+
+- 객체의 기능을 구현
+
+- method, member function
+
