@@ -136,3 +136,19 @@ if (Conditional expression) {
   Execution statement;
 }
 ```
+
+for 문 / while 문 / do-while 문
+
+```
+for (int i = 0; i < n; i++) {
+  Execution statement;
+}
+
+while (i < 0) {
+  Execution statement;
+}
+
+do {
+  Execution statement;
+} while(i > 0);
+```
