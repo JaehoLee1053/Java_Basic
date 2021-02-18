@@ -280,3 +280,16 @@ int add (int num1, int num2) {
 
 - 기본 자료형과 다르게 클래스에 따라 메모리 할당 다름
 
+접근 제어자 (access modifier)
+
+- 변수, 메서드, 생성자에 접근 권한 지정
+
+- public, private, protected
+
+- private는 외부에서 접근 불가
+
+- 정보 은닉 (information hiding)
+
+  - 외부에서 클래스 내부 정보에 접근 제한 (private 사용)
+
+  - 클래스 내부 데이터를 잘못 사용하는 오류 방지 가능
