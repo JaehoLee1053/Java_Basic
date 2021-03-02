@@ -388,8 +388,9 @@ class Human extends Mammal {
 - protected : 하위 클래스에게는 public, 외부에는 private처럼 동작
 
 ||외부 클래스|하위 클래스|동일 클래스|내부 클래스|
-|-|-|-|-|-|
+|:-:|:-:|:-:|:-:|:-:|
 |public|O|O|O|O|
 |protected|X|O|O|O|
 |default|X|X|O|O|
 |private|X|X|X|O|
+
