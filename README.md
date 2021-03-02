@@ -149,6 +149,39 @@ final int a = 0;
 |이항 연산자|항이 두 개인 연산자|num1 + num2;|
 |삼항 연산자|항이 세 개인 연산자|(5 > 3) ? 1 : 0;|
 
+## 배열
+
+배열
+
+- 동일한 자료형의 순차적 자료 구조
+
+- 배열 선언
+
+```
+int[] arr = new int[10];
+int arr[] = new int[10];
+int[][] arr = new int[2][3];
+```
+
+- 처음 선언된 값으로 고정된 길이
+
+객체 배열
+
+- 얕은 복사 : 주소 값자체를 공유, 기존 값 변경시 같이 변경
+
+`System.arraycopy(library, 0, copyLibrary, 0, library.length);`
+		
+- 깊은 복사 : 값만 복사
+
+ArrayList 클래스
+
+|메서드|설명|
+|-|-|
+|boolean add(E e)|요소 하나를 배열에 추가합니다. E는 요소의 자료형을 의미합니다.|
+|int size()|배열에 추가된 요소 전체 개수를 반환합니다.|
+|E get(int index)|배열의 index 위치에 있는 요소 값을 반환합니다.|
+|E remove(int index)|배열의 index 위치에 있는 요소 값을 제거하고 그 값을 반환합니다.|
+|boolean isEmpty()|배열이 비어 있는지 확인합니다.|
 
 ## 제어문
 
@@ -179,7 +212,6 @@ do {
   Execution statement;
 } while(i > 0);
 ```
-
 # OOP
 
 ## OOP
@@ -336,34 +368,28 @@ Singleton Pattern
 
 - 외부에서 유일한 객체를 참조할 수 있는 public static get() 메서드 구현
 
-배열
+### 상속
 
-- 동일한 자료형의 순차적 자료 구조
+상속 (inheritance)
 
-- 배열 선언
+- 새로운 클래스를 정의할 때 이미 구현된 클래스를 상속받아 기능이 확장된 클래스를 구현
+
+- 상속하는 클래스 : 상위 클래스, **parent class**, base class, super class
+- 상속받는 클래스 : 하위 클래스, **child class**, derived class, subclass
+
+- java는 single inheritance만 가능
 
 ```
-int[] arr = new int[10];
-int arr[] = new int[10];
-int[][] arr = new int[2][3];
+class Human extends Mammal {
+
+}
 ```
 
-- 처음 선언된 값으로 고정된 길이
+- protected : 하위 클래스에게는 public, 외부에는 private처럼 동작
 
-객체 배열
-
-- 얕은 복사 : 주소 값자체를 공유, 기존 값 변경시 같이 변경
-
-`System.arraycopy(library, 0, copyLibrary, 0, library.length);`
-		
-- 깊은 복사 : 값만 복사
-
-ArrayList 클래스
-
-|메서드|설명|
-|-|-|
-|boolean add(E e)|요소 하나를 배열에 추가합니다. E는 요소의 자료형을 의미합니다.|
-|int size()|배열에 추가된 요소 전체 개수를 반환합니다.|
-|E get(int index)|배열의 index 위치에 있는 요소 값을 반환합니다.|
-|E remove(int index)|배열의 index 위치에 있는 요소 값을 제거하고 그 값을 반환합니다.|
-|boolean isEmpty()|배열이 비어 있는지 확인합니다.|
+||외부 클래스|하위 클래스|동일 클래스|내부 클래스|
+|-|-|-|-|-|
+|public|O|O|O|O|
+|protected|X|O|O|O|
+|default|X|X|O|O|
+|private|X|X|X|O|
